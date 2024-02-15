@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    background: white;
+    width: 700px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid blue;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+.container h2{
+    font-size: 22px;
+    line-height: 24px;
+    padding: 30px;
+    text-align: center;
+}
+
+.container nav{
+    text-align: center;
+    background-color: blue;
+    line-height: 24px;
+}
+
+.input-name{
+width: 90%;
+position: relative;
+margin: 20px auto;
+}
+.lock{
+    padding: 7.56px 11px;
+}
+.name{
+    width: 45%;
+    padding: 7.56px 0px 8px 40px ;
+}
+.input-name span{
+    margin-left:35px ;
+}
+.text-name{
+    width: 100%;
+    padding: 8px 0px 8px 40px ;
+}
+.input-name i{
+    position:absolute ;
+   font-size: 18px; 
+   color: blue;
+   border-right: 1px solid #cccccc;
+}
+.email{
+    padding:8px;
+}
+.phone{
+    padding: 8px;
+}
+.book{
+    padding: 8px;}
+ia{
+    font-size: 25px;
+    color: blue;
+    padding: 9px;
+}
+ib{
+    font-size: 12px;
+    padding: 1px;
+    color: blue;
+    
+}
+.text-name, .name{
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30 ease-in-out;
+}
+.text-name:hover, .name:hover{
+    background-color: #fafafa;
+
+}
+.text-name:focus, .name:focus{
+    border: 1px solid blue;
+
+}
+.radio-button{
+    margin-right: 3px;
+}
+#country:hover{
+    color: blue;
+}
+#country:focus{
+    color: blue;
+}
+.check-button{
+
+}
+.check{
+    position: relative;
+    margin-right: 15px;
+}
+
+.check::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+ vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}
+.check::after{
+    border-right: 2px solid black ;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+.check-button{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.check-button:hover +.check::before{
+border-color: blue;
+
+}
+.check-button:checked +.check::before{
+    border-color:green;
+}
+.check-button:checked +.check::after{
+-moz-animation: check 0.8s ease 0 running ;
+-webkit-animation: check 0.8s ease 0 running;
+animation:check 0.8s ease 0 running ;
+display: block;
+width: 7px;
+height: 20px;
+border-color: green;
+}
+#button{
+    color:black;
+    background-color: hsl(0, 0%, 95%);
+}
+.scholorship2{
+    width: 90%;
+    padding: 8px 0px 8px 40px ;
+}
+#box{
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+    
+    background-color: hsl(277, 100%, 50%);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-name: colorChange;
+}
+@keyframes colorChange{
+    0%{background-color: hsl(277, 100%, 50%);}
+    20%{background-color: hsl(9, 100%, 50%);}
+    40%{background-color: hsl(114, 100%, 50%);}
+    60%{background-color: hsl(217, 100%, 50%);}
+    80%{background-color: hsl(30, 100%, 50%);}
+    100%{background-color: hsl(86, 83%, 63%);}
+}
+@media only screen and (max-width: 600px){
+    *{
+   
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 10px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    
+    .container{
+        background: white;
+        width: 500px;
+        padding: 10px;
+        margin: 15px 5px 0;
+        border-top: 5px solid blue;
+        box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+    }
+    .container h2{
+        font-size: 18px;
+        line-height: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .container nav{
+        text-align: center;
+        background-color: blue;
+        line-height: 24px;
+    }
+    
+    .input-name{
+    width: -70%;
+    position: relative;
+    margin: 10px auto;
+    }
+    .lock{
+        padding: 7.56px 11px;
+    }
+    .name{
+        width: 45%;
+        padding: 7.56px 0px 8px 40px ;
+    }
+    .input-name span{
+        margin-left:25px ;
+    }
+    .text-name{
+        width: 90%;
+        padding: 8px 0px 8px 40px ;
+    }
+    .input-name i{
+        position:absolute ;
+       font-size: 16px; 
+       color: blue;
+       border-right: 1px solid #cccccc;
+    }
+    .email{
+        padding:8px;
+    }
+    .phone{
+        padding: 8px;
+    }
+    .book{
+        padding: 8px;}
+    ia{
+        font-size: 25px;
+        color: blue;
+        padding: 9px;
+    }
+    ib{
+        font-size: 12px;
+        padding: 1px;
+        color: blue;
+        
+    }
+    .text-name, .name{
+        border: 1px solid #cccccc;
+        outline: none;
+        -webkit-transition: all 0.30 ease-in-out;
+    }
+    .text-name:hover, .name:hover{
+        background-color: #fafafa;
+    
+    }
+    .text-name:focus, .name:focus{
+        border: 1px solid blue;
+    
+    }
+    .radio-button{
+        margin-right: 3px;
+    }
+    #country:hover{
+        color: blue;
+    }
+    #country:focus{
+        color: blue;
+    }
+    .check-button{
+    
+    }
+    .check{
+        position: relative;
+        margin-right: 15px;
+    }
+    
+    .check::before{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+     vertical-align: -2px;
+        border: 2px solid #cccccc;
+        padding: 2.5px;
+        background-color: transparent;
+        background-clip: content-box;
+        transition: all 0.2s ease;
+    }
+    .check::after{
+        border-right: 2px solid black ;
+        border-top: 2px solid black;
+        content: "";
+        height: 20px;
+        left: 2px;
+        position: absolute;
+        top: 7px;
+        transform: scaleX(-1) rotate(135deg);
+        transform-origin: left top;
+        width: 7px;
+        display: none;
+    }
+    .check-button{
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .check-button:hover +.check::before{
+    border-color: blue;
+    
+    }
+    .check-button:checked +.check::before{
+        border-color:green;
+    }
+    .check-button:checked +.check::after{
+    -moz-animation: check 0.8s ease 0 running ;
+    -webkit-animation: check 0.8s ease 0 running;
+    animation:check 0.8s ease 0 running ;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: green;
+    }
+    #button{
+        color:black;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .scholorship2{
+        width: 90%;
+        padding: 8px 0px 8px 40px ;
+    }
+    #box{
+        width: 100%;
+        height: 25px;
+        font-size: 20px;
+        
+        background-color: hsl(277, 100%, 50%);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-name: colorChange;
+    }
+    @keyframes colorChange{
+        0%{background-color: hsl(277, 100%, 50%);}
+        20%{background-color: hsl(9, 100%, 50%);}
+        40%{background-color: hsl(114, 100%, 50%);}
+        60%{background-color: hsl(217, 100%, 50%);}
+        80%{background-color: hsl(30, 100%, 50%);}
+        100%{background-color: hsl(86, 83%, 63%);}
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 14px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    
+    .container{
+        background: white;
+        width: 700px;
+        padding: 25px;
+        margin: 50px auto 0;
+        border-top: 5px solid blue;
+        box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+    }
+    .container h2{
+        font-size: 22px;
+        line-height: 24px;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .container nav{
+        text-align: center;
+        background-color: blue;
+        line-height: 24px;
+    }
+    
+    .input-name{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    }
+    .lock{
+        padding: 7.56px 11px;
+    }
+    .name{
+        width: 45%;
+        padding: 7.56px 0px 8px 40px ;
+    }
+    .input-name span{
+        margin-left:35px ;
+    }
+    .text-name{
+        width: 100%;
+        padding: 8px 0px 8px 40px ;
+    }
+    .input-name i{
+        position:absolute ;
+       font-size: 18px; 
+       color: blue;
+       border-right: 1px solid #cccccc;
+    }
+    .email{
+        padding:8px;
+    }
+    .phone{
+        padding: 8px;
+    }
+    .book{
+        padding: 8px;}
+    ia{
+        font-size: 25px;
+        color: blue;
+        padding: 9px;
+    }
+    ib{
+        font-size: 12px;
+        padding: 1px;
+        color: blue;
+        
+    }
+    .text-name, .name{
+        border: 1px solid #cccccc;
+        outline: none;
+        -webkit-transition: all 0.30 ease-in-out;
+    }
+    .text-name:hover, .name:hover{
+        background-color: #fafafa;
+    
+    }
+    .text-name:focus, .name:focus{
+        border: 1px solid blue;
+    
+    }
+    .radio-button{
+        margin-right: 3px;
+    }
+    #country:hover{
+        color: blue;
+    }
+    #country:focus{
+        color: blue;
+    }
+    .check-button{
+    
+    }
+    .check{
+        position: relative;
+        margin-right: 15px;
+    }
+    
+    .check::before{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+     vertical-align: -2px;
+        border: 2px solid #cccccc;
+        padding: 2.5px;
+        background-color: transparent;
+        background-clip: content-box;
+        transition: all 0.2s ease;
+    }
+    .check::after{
+        border-right: 2px solid black ;
+        border-top: 2px solid black;
+        content: "";
+        height: 20px;
+        left: 2px;
+        position: absolute;
+        top: 7px;
+        transform: scaleX(-1) rotate(135deg);
+        transform-origin: left top;
+        width: 7px;
+        display: none;
+    }
+    .check-button{
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .check-button:hover +.check::before{
+    border-color: blue;
+    
+    }
+    .check-button:checked +.check::before{
+        border-color:green;
+    }
+    .check-button:checked +.check::after{
+    -moz-animation: check 0.8s ease 0 running ;
+    -webkit-animation: check 0.8s ease 0 running;
+    animation:check 0.8s ease 0 running ;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: green;
+    }
+    #button{
+        color:black;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .scholorship2{
+        width: 90%;
+        padding: 8px 0px 8px 40px ;
+    }
+    #box{
+        width: 100%;
+        height: 25px;
+        font-size: 20px;
+        
+        background-color: hsl(277, 100%, 50%);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-name: colorChange;
+    }
+    @keyframes colorChange{
+        0%{background-color: hsl(277, 100%, 50%);}
+        20%{background-color: hsl(9, 100%, 50%);}
+        40%{background-color: hsl(114, 100%, 50%);}
+        60%{background-color: hsl(217, 100%, 50%);}
+        80%{background-color: hsl(30, 100%, 50%);}
+        100%{background-color: hsl(86, 83%, 63%);}
+    }
+
+
+
+    /*For reponsive website*/
+    @media only screen and (max-width: 600px){
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        
+        body{
+            font-size: 8px;
+            background-color: hsl(0, 0%, 95%);
+        }
+        
+        .container{
+            background: white;
+            width: 400px;
+            padding: 10px;
+            margin: 10px 5px 8px 5px;
+            border-top: 5px solid blue;
+            box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        .container h2{
+            font-size: 18px;
+            line-height: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container nav{
+            text-align: center;
+            background-color: blue;
+            line-height: 24px;
+        }
+        
+        .input-name{
+        width: -70%;
+        position: relative;
+        margin: 10px auto;
+        }
+        .lock{
+            padding: 7.56px 11px;
+        }
+        .name{
+            width: 45%;
+            padding: 7.56px 0px 8px 40px ;
+        }
+        .input-name span{
+            margin-left:25px ;
+        }
+        .text-name{
+            width: 90%;
+            padding: 8px 0px 8px 40px ;
+        }
+        .input-name i{
+            position:absolute ;
+           font-size: 16px; 
+           color: blue;
+           border-right: 1px solid #cccccc;
+        }
+        .email{
+            padding:8px;
+        }
+        .phone{
+            padding: 8px;
+        }
+        .book{
+            padding: 8px;}
+        ia{
+            font-size: 25px;
+            color: blue;
+            padding: 9px;
+        }
+        ib{
+            font-size: 12px;
+            padding: 1px;
+            color: blue;
+            
+        }
+        .text-name, .name{
+            border: 1px solid #cccccc;
+            outline: none;
+            -webkit-transition: all 0.30 ease-in-out;
+        }
+        .text-name:hover, .name:hover{
+            background-color: #fafafa;
+        
+        }
+        .text-name:focus, .name:focus{
+            border: 1px solid blue;
+        
+        }
+        .radio-button{
+            margin-right: 3px;
+        }
+        #country:hover{
+            color: blue;
+        }
+        #country:focus{
+            color: blue;
+        }
+        .check-button{
+        
+        }
+        .check{
+            position: relative;
+            margin-right: 15px;
+        }
+        
+        .check::before{
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 8px;
+         vertical-align: -2px;
+            border: 2px solid #cccccc;
+            padding: 2.5px;
+            background-color: transparent;
+            background-clip: content-box;
+            transition: all 0.2s ease;
+        }
+        .check::after{
+            border-right: 2px solid black ;
+            border-top: 2px solid black;
+            content: "";
+            height: 20px;
+            left: 2px;
+            position: absolute;
+            top: 7px;
+            transform: scaleX(-1) rotate(135deg);
+            transform-origin: left top;
+            width: 7px;
+            display: none;
+        }
+        .check-button{
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        .check-button:hover +.check::before{
+        border-color: blue;
+        
+        }
+        .check-button:checked +.check::before{
+            border-color:green;
+        }
+        .check-button:checked +.check::after{
+        -moz-animation: check 0.8s ease 0 running ;
+        -webkit-animation: check 0.8s ease 0 running;
+        animation:check 0.8s ease 0 running ;
+        display: block;
+        width: 7px;
+        height: 20px;
+        border-color: green;
+        }
+        #button{
+            color:black;
+            background-color: hsl(0, 0%, 95%);
+        }
+        .scholorship2{
+            width: 90%;
+            padding: 8px 0px 8px 40px ;
+        }
+        #box{
+            width: 100%;
+            height: 25px;
+            font-size: 20px;
+            
+            background-color: hsl(277, 100%, 50%);
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-name: colorChange;
+        }
+        @keyframes colorChange{
+            0%{background-color: hsl(277, 100%, 50%);}
+            20%{background-color: hsl(9, 100%, 50%);}
+            40%{background-color: hsl(114, 100%, 50%);}
+            60%{background-color: hsl(217, 100%, 50%);}
+            80%{background-color: hsl(30, 100%, 50%);}
+            100%{background-color: hsl(86, 83%, 63%);}
+        }
+        
+    }
+    .check{
+        font-size: 12px;
+    }
+    .kri{
+        padding-left: 50px;
+
+    }
+    kri1{
+        font-size: 14px;
+    }
+       
+   
+
+
+
+
+
+
+
+
+
+}

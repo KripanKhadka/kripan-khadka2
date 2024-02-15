@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+}
+
+#box1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid ;
+    font-size: 13em;
+    text-align: center;
+    background-color: hsl(121, 93%, 53%);
+
+    transform: scaleY();
+}

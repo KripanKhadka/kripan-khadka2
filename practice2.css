@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+
+h3{
+    color: black;
+    border: 3px double red;
+    border-radius: 5px;
+}
+
+#p1{
+    color: purple;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+#p2{
+    color:red;
+    border:3px dotted rgb(255, 106, 0);
+}

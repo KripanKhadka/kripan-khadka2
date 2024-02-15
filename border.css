@@ -1,0 +1,13 @@
+h1{
+    border: 5px double hsl(81, 68%, 45%);
+    border-radius: 10px;
+}
+p{
+    border-bottom: 7px groove hsl(320, 100%, 50%);
+    border-top: 7px groove hsl(121, 100%, 51%);
+    border-left: 7px double hsl(0, 94%, 51%);
+    border-right: 7px double hsl(0, 89%, 52%);
+    
+    border-radius: 10px;
+    
+} 

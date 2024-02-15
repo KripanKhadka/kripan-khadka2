@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+#box1{
+    
+    height: auto;
+    background-color:  hsl(195, 53%, 79%);;
+    font-size: 1em;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+
+}
+@keyframes colorChange{
+    0%{background-color:  hsl(69, 53%, 79%);;}
+    20%{background-color: hsl(135, 100%, 50%);}
+    40%{background-color: hsl(250, 82%, 46%);}
+    60%{background-color: hsl(321, 100%, 50%);}
+    80%{background-color: hsl(64, 100%, 50%);}
+    100%{background-color: hsl(181, 100%, 50%);}
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+}
+.navbar ul{
+    background-color: red;
+    height: 40px;
+    list-style-type: none;
+    padding: 0px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    display: block;
+}
+.navbar a:hover{
+    background-color: blue;
+}
+.navbar li{
+    float: left;
+}
+aside{
+width: 20%;
+float: left;
+padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: hsl(195, 53%, 79%);
+    text-align: center;
+    padding: 15px;
+}
+@media screen and (max-width:600px){
+    aside, section, footer{
+        width: 100%;
+    }
+}

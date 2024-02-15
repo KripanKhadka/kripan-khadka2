@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/4b0b9db091.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/download (1).jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text"></div>
+            <p>Bsc.CSIT First Semister</p>
+            <h1>Hi, I am <span> Kripan</span> <br> Khadka from KCT</h1>
+
+        </div>
+    </div>
+    <!--about-->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-1">
+                    <img src="images/IMG_20240103_134232_928.webp">
+
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>To anyone whom it may concern, It's me Kripan Khadka currently studying at KCT located at Lokanthali-Bhaktapur. I am originally from Nuwakot but have been staying here at Kathmandu for about 17 years now. The art of technology is what facinated me to take part in this field and I hope we all can do it together fruitfully.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Web Designing</li>
+                            <li><span>CSS</span><br>Web styling</li>
+                            <li><span>C-Language</span><br>Web Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Web Designing</li>
+                            <li><span>2023-current</span><br>Web styling</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SEE</span><br>Chanakya Secondary school</li>
+                            <li><span>+2</span><br>Khwopa College</li>
+                            <li><span>BSc.CSIT</span><br>Currently at  KCT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----portfolio-->
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/R.jpg" >
+                    <div class="layer">
+                        <h3>Web Structure</h3>
+                        <p>This web structure helps to improve the traditinal web structure. </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/wp5609975.jpg" >
+                    <div class="layer">
+                        <h3>Web Styling</h3>
+                        <p>This web styling enhances the web structure. </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/OIP (2).jpg" >
+                    <div class="layer">
+                        <h3>Web Function</h3>
+                        <p>This web structure helps to increase the effect of web styling. </p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+
+    
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>cripankhadka19@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9841090451</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kripan.khadka.7"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sobeit_3653907/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/sobeit123"><i class="fa-brands fa-twitter-square"></i></a>
+                    
+                    </div>
+                  <br>
+                    <a href="images/Admit_Card.Pdf" Download class="btn btn2">Download CV</a>
+                    
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message"  rows="8" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="copyright"><p>Copyright &copy; Kripan</p></div>
+
+    </div>
+
+    <br>
+    
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+</script>
+
+</body>
+</html>
